@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Dashboard">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="900.0" style="-fx-background-color: f2b6e2;">
+         <children>
+            <Button layoutX="0.8" layoutY="-2.0" mnemonicParsing="false" onAction="#menu" prefHeight="66.0" prefWidth="64.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="836.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/menu.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="-1.0" hue="0.84" saturation="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="exit" layoutX="845.0" mnemonicParsing="false" onAction="#exit1" prefHeight="65.0" prefWidth="55.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/cancel.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" prefHeight="650.0" prefWidth="900.0" style="-fx-backgroundcolor: #b2d9ea;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="64.0" layoutY="54.0" prefHeight="590.0" prefWidth="836.0" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <StackPane fx:id="contentArea" prefHeight="590.0" prefWidth="836.0" style="-fx-background-color: linear-gradient(to  bottom,#f194f2, #D0D5F2);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="64.0" prefHeight="586.0" prefWidth="64.0" style="-fx-background-color: f2b6e2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="836.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <VBox layoutX="3.0" layoutY="62.0" prefHeight="424.0" prefWidth="58.0" spacing="26.0" AnchorPane.bottomAnchor="106.00000000000006" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.4000000000000057" AnchorPane.topAnchor="62.0">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/book.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/dich.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/game.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="55.0" layoutX="10.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/user.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="57.0" fitWidth="55.0" layoutX="10.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/guide.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="64.0" layoutY="54.0" prefHeight="590.0" prefWidth="210.0" style="-fx-background-color: #F2CEF2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <VBox layoutY="51.2" prefHeight="539.0" prefWidth="210.0" spacing="17.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Dictionary" prefHeight="65.0" prefWidth="213.0" style="-fx-background-color: transparent;" text="DICTIONARY">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="21.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#API" prefHeight="65.0" prefWidth="213.0" style="-fx-background-color: transparent;" text=" TRANSLATE API">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="19.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="92.0" mnemonicParsing="false" onAction="#Game" prefHeight="65.0" prefWidth="213.0" style="-fx-background-color: transparent;" text="GAME">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="21.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="175.0" mnemonicParsing="false" onAction="#user" prefHeight="65.0" prefWidth="213.0" style="-fx-background-color: transparent;" text="USER ">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="21.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="340.0" mnemonicParsing="false" onAction="#Setting" prefHeight="65.0" prefWidth="213.0" style="-fx-background-color: transparent;" text="USER'S GUIDE">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="21.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

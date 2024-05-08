@@ -1,0 +1,32 @@
+.game-board {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px; /* Thay thế hàm repeat() */
+  grid-template-rows: 100px 100px 100px 100px; /* Thay thế hàm repeat() */
+  gap: 5px;
+}
+
+.game-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.game-tile:hover {
+  background-color: #ddd;
+}
+
+.empty-tile {
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.selected-tile {
+  background-color: #ffcc00;
+}
+
+.target-tile {
+  background-color: #00cc66;
+}

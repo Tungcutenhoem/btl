@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="584.0" prefWidth="836.0" style="-fx-background-color: linear-gradient(to right,#f194f2, #D0D5F2);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SceneApp">
+   <children>
+      <TextArea layoutX="378.0" layoutY="184.0" prefHeight="334.0" prefWidth="418.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7354587316513062" green="0.11972709745168686" blue="0.8736842274665833" />
+               </color>
+            </DropShadow>
+         </effect></TextArea>
+      <WebView fx:id="definitionView" layoutX="387.0" layoutY="184.0" prefHeight="334.0" prefWidth="358.0" />
+      <ListView fx:id="listView" layoutX="81.0" layoutY="184.0" onMouseClicked="#setonMouseClickedTexField" prefHeight="334.0" prefWidth="252.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="502.99999999999994" AnchorPane.topAnchor="184.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9717283844947815" green="0.1518518477678299" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ListView>
+      <Label prefHeight="113.0" prefWidth="849.0" text="            DICTIONARY" textAlignment="CENTER" AnchorPane.bottomAnchor="471.20000000000005" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="72.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.992424249649048" endY="0.25000001444961084" startX="1.0" startY="0.8409090891028896">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9578947424888611" green="0.3618713319301605" blue="0.9181598424911499" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.14814814925193787" blue="0.9432098865509033" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <TextField fx:id="SearchWord" layoutX="81.0" layoutY="120.0" onMouseClicked="#setonMouseClickedTexField" prefHeight="38.0" prefWidth="252.0" promptText="SEARCH HERE" style="-fx-background-radius: 50px; -fx-border-radius: 50px; -fx-background-color: #ffffff; -fx-border-color: #ffffff;" AnchorPane.bottomAnchor="425.6" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="503.20000000000005" AnchorPane.topAnchor="120.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8986671566963196" green="0.12479999661445618" blue="0.9599999785423279" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="300.8" layoutY="120.0" minWidth="43.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="426.0" AnchorPane.leftAnchor="301.0" AnchorPane.rightAnchor="504.0" AnchorPane.topAnchor="120.0">
+         <graphic>
+            <ImageView fx:id="ImageSearchClass" fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/searchclass.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <VBox layoutX="742.0" layoutY="193.0" prefHeight="200.0" prefWidth="43.0" spacing="10.0">
+         <children>
+            <Button minWidth="53.0" mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="46.0" prefWidth="51.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button minWidth="53.0" mnemonicParsing="false" onAction="#handleButtonLoud" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/loud.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button minWidth="53.0" mnemonicParsing="false" onAction="#handleButtonTranslate" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/translate.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

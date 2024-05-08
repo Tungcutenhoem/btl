@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" prefHeight="684.0" prefWidth="891.0" style="-fx-background-color: linear-gradient(to  bottom,#f194f2, #D0D5F2);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Scrambled.ScrambledGameScene">
+   <children>
+      <StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="796.0">
+         <children>
+            <HBox prefHeight="684.0" prefWidth="796.0">
+               <children>
+                  <VBox prefHeight="684.0" prefWidth="323.0" spacing="40.0">
+                     <children>
+                        <Button onAction="#RestartGane" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Restart">
+                           <font>
+                              <Font name="Bauhaus 93" size="26.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.948580265045166" green="0.5592592358589172" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect></Button>
+                        <Button mnemonicParsing="false" onAction="#backtoScrambledStart" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Back">
+                           <font>
+                              <Font name="Bauhaus 93" size="26.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.948580265045166" green="0.5592592358589172" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect></Button>
+                        <Button onAction="#CheckAnswer" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Check Answer">
+                           <font>
+                              <Font name="Bauhaus 93" size="26.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.948580265045166" green="0.5592592358589172" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect></Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="684.0" prefWidth="478.0" spacing="20">
+                     <children>
+                        <Label contentDisplay="CENTER" graphicTextGap="10.0" prefHeight="48.0" prefWidth="322.0" text="Scrambled Game " textFill="#232222" wrapText="true">
+                           <font>
+                              <Font name="Berlin Sans FB" size="43.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="YourGuess" prefHeight="60.0" prefWidth="476.0" promptText="Enter your guess">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                           </font></TextField>
+                        <TextField fx:id="SuggestWord" prefHeight="67.0" prefWidth="476.0" promptText="Suggest word">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                           </font></TextField>
+                        <Label fx:id="Score" text="Score: 0">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="25.0" />
+                           </font></Label>
+                        <Label fx:id="Turn" alignment="CENTER" prefHeight="39.0" prefWidth="100.0" styleClass="resultLabel" text="Turns: 0">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="25.0" />
+                           </font></Label>
+                        <Label fx:id="Heart" text="Heart: 5">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="25.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</StackPane>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="584.0" prefWidth="836.0" style="-fx-background-color: linear-gradient(to right,#f194f2, #D0D5F2);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SceneUser">
+   <children>
+      <TextField layoutX="363.0" layoutY="185.0" prefHeight="334.0" prefWidth="430.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9276921153068542" green="0.07999999821186066" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <WebView fx:id="definitionView" layoutX="363.0" layoutY="189.0" prefHeight="326.0" prefWidth="366.0" />
+      <Label layoutX="137.0" layoutY="14.0" prefHeight="102.0" prefWidth="561.0" text="USER'S DICTIONARY">
+         <font>
+            <Font name="Berlin Sans FB" size="64.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9469135999679565" green="0.20370370149612427" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+         <textFill>
+            <LinearGradient endX="0.5833333279147292" endY="0.19696972586891867" startX="0.5833333482344946" startY="0.6884469227357344">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9684210419654846" green="0.5200779438018799" blue="0.9235867261886597" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ListView fx:id="listView" layoutX="26.0" layoutY="126.0" prefHeight="326.0" prefWidth="252.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="503.0" AnchorPane.topAnchor="185.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9100000262260437" green="0.018200000748038292" blue="0.8217253684997559" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ListView>
+      <TextField fx:id="SearchWord" layoutX="81.0" layoutY="123.0" prefHeight="41.0" prefWidth="252.0" promptText="SEARCH HERE" style="-fx-background-radius: 50px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9522222280502319" green="0.04444444552063942" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></TextField>
+      <VBox layoutX="735.0" layoutY="233.0" prefHeight="200.0" prefWidth="56.0">
+         <children>
+            <Button fx:id="LoudButton" mnemonicParsing="false" onAction="#handleButtonLoud" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="ImageLoud" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/loud.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleAddButton" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="DeleteButton" mnemonicParsing="false" onAction="#handleDeleteButtonAction" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="10.0" layoutY="122.0" mnemonicParsing="false" onAction="#reload" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="ImageDelete1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/reload.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="292.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/searchclass.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
