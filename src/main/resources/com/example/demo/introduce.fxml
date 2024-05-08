@@ -12,7 +12,6 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="584.0" prefWidth="836.0" style="-fx-background-color: linear-gradient(to right,#f194f2, #D0D5F2);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Introduce">
    <children>
       <Pane layoutX="50.0" layoutY="171.0" prefHeight="216.0" prefWidth="200.0" AnchorPane.leftAnchor="50.0">
@@ -54,7 +53,7 @@
                   <Font name="Calibri Bold" size="23.0" />
                </font>
             </Label>
-            <Label layoutX="51.0" layoutY="174.0" prefHeight="40.0" prefWidth="98.0" text="23020408">
+            <Label layoutX="51.0" layoutY="174.0" prefHeight="40.0" prefWidth="98.0" text="23020404">
                <textFill>
                   <LinearGradient endX="0.9810606060606061" endY="1.0" startX="0.47348483945384173">
                      <stops>
@@ -116,7 +115,7 @@
                   <Font name="Calibri Bold" size="23.0" />
                </font>
             </Label>
-            <Label layoutX="51.0" layoutY="174.0" prefHeight="40.0" prefWidth="98.0" text="23020408">
+            <Label layoutX="51.0" layoutY="174.0" prefHeight="40.0" prefWidth="98.0" text="23020432">
                <textFill>
                   <LinearGradient endX="0.9810606060606061" endY="1.0" startX="0.47348483945384173">
                      <stops>

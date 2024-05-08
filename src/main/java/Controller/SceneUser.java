@@ -250,16 +250,6 @@ public class SceneUser {
     }
     @FXML
     public void reload(){
-//        if (listView.getItems().isEmpty()) {
-//            // Nếu danh sách trống, hiển thị nội dung trống trên WebView
-//            definitionView.getEngine().loadContent("");
-//        } else {
-//            // Nếu danh sách không trống, hiển thị nội dung của từ đầu tiên trên ListView
-//            String firstWord = listView.getItems().get(1);
-//            Word firstSelectedWord = UserDataCurent.get(firstWord);
-//            String definition = firstSelectedWord.getWord_explain();
-//            definitionView.getEngine().loadContent(definition, "text/html");
-//        }
         reload_all();
 
     }

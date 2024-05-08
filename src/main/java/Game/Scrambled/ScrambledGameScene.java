@@ -1,5 +1,6 @@
 package Game.Scrambled;
 
+import Controller.SceneAddWord;
 import Game.Game;
 import Game.Wordle.WordleStartScene;
 import javafx.animation.FadeTransition;
@@ -12,6 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -203,6 +205,20 @@ public class ScrambledGameScene extends Game implements Initializable {
         SW = getRandomAL();
         SuggestWord.setText(SW);
     }
+    @FXML
+    private void nextToInstruction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/demo/fxml/Scrambled/Instruction.fxml"));
+        Stage stage = new Stage();
+        stage.setResizable(false);
+
+        // Thiết lập kiểu dáng của sân khấu bằng CSS
+        String css = this.getClass().getResource("/com/example/demo/css/Scrambled/Instruction.css").toExternalForm();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(css);
+        stage.setScene(scene);
+        stage.showAndWait();
+    }
+
 
 
 

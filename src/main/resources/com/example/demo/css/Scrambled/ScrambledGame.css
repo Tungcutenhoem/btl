@@ -5,27 +5,4 @@
     -fx-background-color: linear-gradient(to  bottom,#f194f2, #D0D5F2); /* Background color */
 }
 
-/* Style for labels */
-.label {
-    -fx-font-size: 18px; /* Font size */
-    -fx-text-fill: #282626; /* Text color */
-}
 
-/* Style for text field */
-.text-field {
-    -fx-prompt-text-fill: #a9a9a9; /* Prompt text color */
-}
-
-/* Style for buttons */
-/*
-.button {
-    -fx-font-size: 30px; /* Font size */
-   /* -fx-background-color: #4CAF50; /* Button background color */
-   /* -fx-text-fill: white; /* Button text color */
-/*}
-*/
-
-/* Style for buttons when hovered */
-.button:hover {
-    -fx-background-color: #45a049; /* Button background color on hover */
-}

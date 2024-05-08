@@ -38,6 +38,6 @@
 
 /* AnchorPane */
 .AnchorPane {
-    -fx-background-color: #99D9F2;
+    -fx-background-color: linear-gradient(to  bottom,#f194f2, #D0D5F2);
     -fx-border-width: 2px; 
 }

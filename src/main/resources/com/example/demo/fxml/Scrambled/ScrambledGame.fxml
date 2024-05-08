@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
@@ -51,6 +53,25 @@
                                  </color>
                               </DropShadow>
                            </effect></Button>
+                        <Button layoutX="10.0" layoutY="290.0" onAction="#nextToInstruction" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+                           <font>
+                              <Font name="Bauhaus 93" size="26.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.948580265045166" green="0.5592592358589172" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <graphic>
+                              <ImageView fitHeight="94.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/instruction.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
                      </children>
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="684.0" prefWidth="478.0" spacing="20">
