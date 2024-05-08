@@ -28,17 +28,17 @@
          </font></Button>
       <Pane layoutX="136.0" layoutY="146.0" prefHeight="294.0" prefWidth="518.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
          <children>
-            <Label fx:id="Answer" layoutX="44.0" layoutY="38.0" prefHeight="43.0" prefWidth="431.0" text="Answer: ">
+            <Label fx:id="Answer" layoutX="44.0" layoutY="42.0" prefHeight="43.0" prefWidth="431.0" text="Answer: ">
                <font>
                   <Font name="Rockwell" size="29.0" />
                </font>
             </Label>
-              <Label fx:id="HighestScore" layoutX="180.0" layoutY="213.0" text="Highest Score:">
+              <Label fx:id="HighestScore" layoutX="44.0" layoutY="211.0" text="Highest Score:">
                   <font>
                       <Font name="Rockwell" size="27.0" />
                   </font>
               </Label>
-              <Label fx:id="YourScore" layoutX="196.0" layoutY="134.0" text="Your Score:">
+              <Label fx:id="YourScore" layoutX="44.0" layoutY="137.0" text="Your Score:">
                   <font>
                       <Font name="Rockwell" size="27.0" />
                   </font>
