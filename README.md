@@ -48,5 +48,7 @@ Là ứng dụng có thể tra cứu tiếng anh và tiếng việt dưa trên n
 # Setting Lib:
    * Sau khi cài xong thì giải nén file. lưu vào 1 folder lib. Thêm vào ClassPath.
 # Demo:
-![Logo OpenAI](C:\tudienn\src\main\resources\com\example\demo\image\Demo.PNG)
+<p align="center">
+  <img width="640" height="480" src="https://i.imgur.com/2TWGJWy.png">
+</p>
 
